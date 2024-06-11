@@ -1,0 +1,6 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: transparent;
+}
+main {
+  background: url(../images/noise.png) 0 0 / 200px 200px;
+}

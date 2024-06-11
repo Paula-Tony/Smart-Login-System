@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Smart Login System</title>
+  </head>
+  <body>
+    <main
+      class="min-vh-100 bg-body text-white d-flex align-items-center justify-content-center p-3"
+    >
+      <form
+        id="registrationForm"
+        class="d-none text-center rounded-3 p-5 border-secondary border bg-body"
+      >
+        <h1 class="mb-3">Smart Login System</h1>
+        <h2 class="fs-4 mb-5">Registration Page</h2>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control border-secondary mb-2"
+            id="name"
+            placeholder=""
+            minlength="3"
+            maxlength="15"
+            required
+          />
+          <label for="name">Enter Your Name</label>
+          <div
+            id="nameHelp"
+            class="form-text alert alert-danger p-1 mb-2 opacity-0"
+          >
+            Name must be between 3 and 15 characters.
+          </div>
+        </div>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control border-secondary mb-2"
+            id="email"
+            placeholder=""
+            required
+          />
+          <label for="email">Email address</label>
+          <div
+            id="emailHelp"
+            class="form-text alert alert-danger p-1 mb-2 opacity-0"
+          >
+            Invalid Email
+          </div>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control border-secondary mb-2"
+            id="password"
+            placeholder=""
+            required
+          />
+          <label for="password">Password</label>
+          <div
+            id="passwordHelp"
+            class="form-text alert alert-danger p-1 mb-2 opacity-0"
+          >
+            Minimum 8 characters: 1 uppercase, 1 lowercase, 1 number, 1 special
+            character.
+          </div>
+        </div>
+        <button
+          class="btn btn-outline-secondary mb-4 px-5 py-2 text-white"
+          type="submit"
+        >
+          Sign up
+        </button>
+        <p class="mb-0">
+          You have an account ?
+          <a id="signInLink" class="text-decoration-none d-block" href="#"
+            >Sign in</a
+          >
+        </p>
+      </form>
+
+      <form
+        id="loginForm"
+        class="text-center rounded-3 p-5 border-secondary border bg-body"
+      >
+        <h1 class="mb-3">Smart Login System</h1>
+        <h2 class="fs-4 mb-5">Login Page</h2>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control border-secondary mb-2"
+            id="loginEmail"
+            placeholder=""
+            required
+          />
+          <label for="loginEmail">Email address</label>
+          <div
+            id="loginEmailHelp"
+            class="form-text alert alert-danger p-1 mb-2 opacity-0"
+          >
+            Invalid Email
+          </div>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control border-secondary mb-2"
+            id="loginPassword"
+            placeholder=""
+            required
+          />
+          <label for="loginPassword">Password</label>
+          <div
+            id="loginPasswordHelp"
+            class="form-text alert alert-danger p-1 mb-2 opacity-0"
+          >
+            Please enter the correct password
+          </div>
+        </div>
+        <button
+          class="btn btn-outline-secondary mb-4 px-5 py-2 text-white"
+          type="submit"
+        >
+          Sign in
+        </button>
+        <p class="mb-0">
+          Don’t have an account ?
+          <a id="signUpLink" class="text-decoration-none d-block" href="#"
+            >Sign up</a
+          >
+        </p>
+      </form>
+
+      <div
+        id="homePage"
+        class="d-none text-center rounded-3 p-5 border-secondary border bg-body"
+      >
+        <h2 class="mb-4" id="welcomeMessage">Welcome</h2>
+        <button
+          class="btn btn-outline-secondary px-5 py-2 text-white"
+          id="signOutBtn"
+        >
+          Sign out
+        </button>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
